@@ -80,7 +80,7 @@ const Home = () => {
             </div>
           </div>
 
-          <p className="text-md pb-2 font-semibold md:text-lg">誰？</p>
+          <p className="text-md pb-2 font-semibold md:text-lg">生産者</p>
           <div className="flex flex-row space-x-4">
             <a
               href="https://twitter.com/unpuy_tw"
