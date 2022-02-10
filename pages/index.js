@@ -14,14 +14,15 @@ const Home = () => {
         <meta name="description" content="bootchです" />
       </Head>
 
-      <main className="flex min-h-screen items-center">
-        <div className="w-1/5 md:w-1/3"></div>
+      <main className="flex min-h-screen">
+        <div className="w-1/6 md:w-1/3"></div>
         <div className="flex flex-col">
+          <div className="h-1/3"></div>
           <div className="mb-8">
             <p className="text-md pb-2 font-semibold md:text-lg">
               私が作りました
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row space-x-4">
               <a
                 href="https://ftune-web.com/"
                 target="_blank"
@@ -50,7 +51,7 @@ const Home = () => {
           </div>
 
           <p className="text-md pb-2 font-semibold md:text-lg">誰？</p>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-row space-x-4">
             <a
               href="https://twitter.com/unpuy_tw"
               target="_blank"
