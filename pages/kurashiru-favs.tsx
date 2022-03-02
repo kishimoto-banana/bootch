@@ -17,7 +17,7 @@ type Props = {
 const kurashiruFavApiEndpoint =
   'https://script.google.com/macros/s/AKfycbyaQbxvKkLoGeVoCOiaCpbfTOm3QC5Q-hfZ-YwMKQDa7F4OCzlvb0BQh7IoxEru7P1ohQ/exec'
 const revalidateSecond = 10 // 30分
-const formatStyle = 'YYYY-MM-DDD HH:mm:ss'
+const formatStyle = 'YYYY-MM-DD HH:mm:ss'
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const fetchedAt = formatToTimeZone(new Date(), formatStyle, {
