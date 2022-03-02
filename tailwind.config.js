@@ -4,6 +4,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    maxWidth: {
+      recipeCard: '240px',
+    },
     extend: {
       fontFamily: {
         notoSerifJa: ['Noto Serif Japanese'],
