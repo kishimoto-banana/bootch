@@ -39,13 +39,11 @@ const KurashiruFavs: NextPage<Props> = ({ recipes, fetchedAt }) => {
           href="https://twitter.com/unpuy_tw"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-blue-500 hover:underline md:text-sm"
+          className="text-sm text-blue-500 hover:underline"
         >
           <p className="text-right">@unpuy_tw</p>
         </a>
-        <p className="pt-1 text-right text-xs md:text-sm">
-          最終更新日時：{fetchedAt}
-        </p>
+        <p className="pt-1 text-right text-sm">最終更新日時：{fetchedAt}</p>
       </div>
       <div className="mt-8 mb-4 grid grid-cols-1 gap-4 px-4  md:grid-cols-3 lg:grid-cols-4">
         {recipes.map((recipe) => (
