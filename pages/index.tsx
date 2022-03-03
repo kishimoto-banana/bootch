@@ -1,49 +1,6 @@
-import Head from 'next/head'
-
-const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ''
-const existsGaId = GA_ID !== ''
-
-const GoogleAnalytics = () => {
-  return (
-    <>
-      {existsGaId && (
-        <>
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${GA_ID}', {
-                    page_path: window.location.pathname,
-                  });`,
-            }}
-          />
-        </>
-      )}
-    </>
-  )
-}
-
 const Home = () => {
   return (
     <div>
-      <Head>
-        <title>bootch</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Yomogi&family=Zen+Kaku+Gothic+New:wght@300&family=Zen+Kurenaido&display=swap"
-          rel="stylesheet"
-        />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="bootchです" />
-        <GoogleAnalytics />
-      </Head>
-
       <main className="flex min-h-screen">
         <div className="w-1/6 md:w-1/3"></div>
         <div className="flex flex-col">
