@@ -38,13 +38,13 @@ const KurashiruFavs: NextPage<Props> = ({ recipes, fetchedAt }) => {
         <meta property="og:title" content={pageTitle} />
         <meta
           name="description"
-          content="僕のクラシルお気に入りレシピを紹介します"
+          content="ぼくのクラシルお気に入りレシピを紹介します"
         />
         <meta property="og:site_name" content={pageTitle} />
         <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"
-          content="僕のクラシルお気に入りレシピを紹介します"
+          content="ぼくのクラシルお気に入りレシピを紹介します"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bootch.app/kurashiru-favs" />
