@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Home = () => {
   return (
     <div>
@@ -9,15 +11,20 @@ const Home = () => {
             <p className="text-md pb-2 font-semibold md:text-lg">
               私が作りました
             </p>
-            <div className="flex flex-row space-x-4">
+            <div className="grid grid-cols-1 gap-2 lg:flex lg:flex-row lg:gap-0 lg:space-x-4">
               <a
                 href="https://ftune-web.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md underline underline-offset-1 hover:text-gray-600 md:text-lg"
+                className="text-md  underline underline-offset-1 hover:text-gray-600 md:text-lg"
               >
                 Ftune
               </a>
+              <Link href="/kurashiru-favs">
+                <a className="text-md underline underline-offset-1 hover:text-gray-600 md:text-lg">
+                  ぼくのクラシルお気に入りレシピ
+                </a>
+              </Link>
               <a
                 href="https://owarai-eikyo-map.web.app/"
                 target="_blank"
