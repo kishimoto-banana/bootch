@@ -35,15 +35,21 @@ const KurashiruFavs: NextPage<Props> = ({ recipes, fetchedAt }) => {
     <>
       <Head>
         <title>{pageTitle}</title>
+        <meta property="og:title" content={pageTitle} />
         <meta
           name="description"
           content="僕のクラシルお気に入りレシピを紹介します"
         />
+        <meta property="og:site_name" content={pageTitle} />
         <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"
           content="僕のクラシルお気に入りレシピを紹介します"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bootch.app/kurashiru-favs" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="https://bootch.app/kurashiru-favs" />
       </Head>
       <div className="flex min-h-screen w-full flex-col items-center justify-center">
         <div className="flex flex-col">
