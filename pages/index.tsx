@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <main className="flex min-h-screen">
-        <div className="w-1/6 md:w-1/3"></div>
+        <div className="w-1/6 md:w-1/4"></div>
         <div className="flex flex-col">
           <div className="h-1/3"></div>
           <div className="mb-8">
