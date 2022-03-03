@@ -1,5 +1,5 @@
-import { GetStaticProps, NextPage } from 'next'
 import { formatToTimeZone } from 'date-fns-timezone'
+import { GetStaticProps, NextPage } from 'next'
 
 type Recipe = {
   url: string
@@ -31,19 +31,35 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 const KurashiruFavs: NextPage<Props> = ({ recipes, fetchedAt }) => {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center">
-      <h3 className="pt-8 text-2xl font-medium">
-        ぼくのクラシルお気に入りレシピ
-      </h3>
-      <p className="pt-2 text-sm">最終更新日時：{fetchedAt}</p>
-      <div className="my-12 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex flex-col">
+        <h3 className="pt-8 text-lg font-medium md:text-2xl">
+          ぼくのクラシルお気に入りレシピ
+        </h3>
+        <a
+          href="https://twitter.com/unpuy_tw"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-blue-500 hover:underline md:text-sm"
+        >
+          <p className="text-right">@unpuy_tw</p>
+        </a>
+        <p className="pt-1 text-right text-xs md:text-sm">
+          最終更新日時：{fetchedAt}
+        </p>
+      </div>
+      <div className="mt-8 mb-4 grid grid-cols-1 gap-4 px-4  md:grid-cols-3 lg:grid-cols-4">
         {recipes.map((recipe) => (
-          <div className="max-w-recipeCard">
+          <div className="md:max-w-recipeCard">
             <a href={recipe.url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={recipe.imageUrl}
-                className="object-fit h-56 w-full rounded-lg"
-              />
-              <p className="text-md font-bold text-gray-900 ">{recipe.title}</p>
+              <div className="flex flex-row items-center md:flex-col">
+                <img
+                  src={recipe.imageUrl}
+                  className="h-20 w-20 rounded-lg object-cover md:h-56 md:w-full"
+                />
+                <p className="text-md pl-2 font-bold text-gray-900 md:pt-1 md:pl-0">
+                  {recipe.title}
+                </p>
+              </div>
             </a>
           </div>
         ))}
