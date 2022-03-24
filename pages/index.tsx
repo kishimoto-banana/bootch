@@ -67,6 +67,14 @@ const Home = () => {
                 Twitter
               </a>
               <a
+                href="https://github.com/kishimoto-banana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md underline underline-offset-1 hover:text-gray-600 md:text-lg"
+              >
+                GitHub
+              </a>
+              <a
                 href="https://pompom168.hatenablog.com/"
                 target="_blank"
                 rel="noopener noreferrer"
