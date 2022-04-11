@@ -25,6 +25,14 @@ const Home = () => {
               </p>
               <div className="grid grid-cols-1 gap-2 lg:flex lg:flex-row lg:gap-0 lg:space-x-4">
                 <a
+                  href="https://fontpint.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-md  underline underline-offset-1 hover:text-gray-600 md:text-lg"
+                >
+                  フォントピント
+                </a>
+                <a
                   href="https://ftune-web.com/"
                   target="_blank"
                   rel="noopener noreferrer"
