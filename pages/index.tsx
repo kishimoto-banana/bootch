@@ -75,6 +75,14 @@ const Home = () => {
                 Twitter
               </a>
               <a
+                href="https://note.com/kishimoto_banana"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-md underline underline-offset-1 hover:text-gray-600 md:text-lg"
+              >
+                note
+              </a>
+              <a
                 href="https://github.com/kishimoto-banana"
                 target="_blank"
                 rel="noopener noreferrer"
